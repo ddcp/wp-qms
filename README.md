@@ -1,4 +1,4 @@
-# wp-qms
+# wp-vqs
 Queue Management System Wordpress Plugin
 
 # Veterinary Queue System

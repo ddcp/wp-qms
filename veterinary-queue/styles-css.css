@@ -1,0 +1,261 @@
+/**
+ * Styles für das Tierklinik-Warteschlangen-Plugin
+ */
+.veterinary-queue-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.veterinary-tv-container {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Eingabeformular Styles */
+.input-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Warteschlange Styles */
+.queue-container {
+    margin-top: 20px;
+}
+
+.queue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.queue-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.queue-table th,
+.queue-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.queue-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.queue-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.priority-high {
+    background-color: #ffebee;
+}
+
+.priority-medium {
+    background-color: #fff8e1;
+}
+
+.priority-low {
+    background-color: #e8f5e9;
+}
+
+.action-btn {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.start-treatment {
+    background-color: #2196F3;
+    color: white;
+}
+
+.start-treatment:hover {
+    background-color: #0b7dda;
+}
+
+.remove-item {
+    background-color: #f44336;
+    color: white;
+}
+
+.remove-item:hover {
+    background-color: #d32f2f;
+}
+
+/* TV-Ansicht Styles */
+.tv-screen {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 600px;
+}
+
+.tv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 15px;
+}
+
+.tv-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.tv-subtitle {
+    font-size: 20px;
+    color: #aaa;
+}
+
+.tv-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tv-stat-item {
+    text-align: center;
+}
+
+.tv-stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.tv-stat-label {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.tv-queue-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.tv-queue-table th {
+    padding: 15px;
+    text-align: left;
+    color: #aaa;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+}
+
+.tv-queue-table td {
+    padding: 20px 15px;
+    font-size: 22px;
+    background-color: #222;
+}
+
+.tv-priority-high td {
+    background-color: #5d1e1e;
+}
+
+.tv-priority-medium td {
+    background-color: #4d4d1f;
+}
+
+.tv-priority-low td {
+    background-color: #1e4d1e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-group {
+        min-width: 100%;
+    }
+    
+    .stat-value {
+        font-size: 18px;
+    }
+    
+    .queue-table th,
+    .queue-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    .action-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
